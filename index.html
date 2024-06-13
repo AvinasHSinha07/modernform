@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-overlay">
@@ -37,13 +37,22 @@
                         <textarea id="project" name="project" rows="3" placeholder="Tell us more about your project"></textarea>
                     </div>
                     <div class="form-group file-upload" style="display: flex; flex-direction: column; align-items: center;">
-                       
-                        <label for="file"><i  style="font-size: 30px; " class="fa-solid fa-file"></i>   </label>
                         <input type="file" id="file" name="file" accept="image/*,application/pdf" multiple>
-                        <small style="text-align: center;">Drag & drop any images or documents that might be helpful in explaining your brief here (Max file size: 25 MB).</small>
+                        <div id="dropArea" class="drop-area" style="display: flex; align-items: center;">
+                            <div id="fileList" class="file-list">No file chosen</div>
+                            <div style="background-color: #ff497c; width: 40px; margin-top: 5px; height: 40px;border-radius: 50%; display: flex; align-items: center; justify-content: center ;">
+                                <p ><i class="fa-solid fa-file" style="font-size: 20px; "></i></p>
+                             
+                                </div>
+                                <div>
+
+                                    <p>Drag & drop files here or click to select files</p>
+                                
+                            <p style="text-align: center; font-size: 8px;">Drag & drop any images or documents that might be helpful in explaining your brief here (Max file size: 25 MB).</p>
+                                </div>
+                        </div>
                     </div>
                     <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
-
                         <button type="submit">Book Appointment</button>
                     </div>
                 </form>
@@ -53,6 +62,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
