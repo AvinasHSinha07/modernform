@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay">
+        <div class="container">
+            <div class="left-content">
+                <h2>Welcome to Our Service</h2>
+                <p>We are excited to help you with your project. Please fill out the form to get started. Our team is dedicated to providing you with the best service possible.</p>
+                <p><i class="fas fa-check-circle"></i> High quality services</p>
+                <p><i class="fas fa-check-circle"></i> Expert support</p>
+                <p><i class="fas fa-check-circle"></i> Customer satisfaction</p>
+            </div>
+            <div class="form-container">
+                <h1>Get Started <span>Today!</span></h1>
+                <hr class="divider">
+                <form id="projectForm" class="frm">
+                    <div class="form-group">
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company <span>*</span></label>
+                        <input type="text" id="company" name="company" required placeholder="ABC Company, LLC">
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Tell us more about your project</label>
+                        <textarea id="project" name="project" rows="3" placeholder="Tell us more about your project"></textarea>
+                    </div>
+                    <div class="form-group file-upload" style="display: flex; flex-direction: column; align-items: center;">
+                       
+                        <label for="file"><i  style="font-size: 30px; " class="fa-solid fa-file"></i>   </label>
+                        <input type="file" id="file" name="file" accept="image/*,application/pdf" multiple>
+                        <small style="text-align: center;">Drag & drop any images or documents that might be helpful in explaining your brief here (Max file size: 25 MB).</small>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
+
+                        <button type="submit">Book Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
